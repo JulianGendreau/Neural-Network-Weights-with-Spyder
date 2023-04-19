@@ -1,0 +1,395 @@
+Spyder Editor
+This is a temporary script file. """
+import numpy as np np.set_printoptions(precision=4,suppress=True)
+x1 = 0.8 x2 = 0.9 w1 = 0.24 w2 = 0.88 eta = 5.0 bias = 0 d=0.95
+def activation(A):
+return 1.0/(1 + np.exp(-1*A))
+for i in range(0,1):
+A = w1*x1 + w2*x2 + bias y = activation(A)
+delta = (d - y)*y*(1-y)
+w1 = w1 + eta*delta*x1 w2 = w2 + eta*delta*x2 bias = bias + eta*delta*1 print(y)
+print("Weights w1 , w2")
+print(w1, w2)
+activity = w1*x1 + w2*x2
+print("With the inputs, the activity value is ", activity)
+print("With the inputs, the activation value is ", activation(activity))
+*Run
+Output
+runfile('/Users/juliangendreau/.spyder-py3/temp.py', wdir='/Users/juliangendreau/.spyder- py3')
+0.7279011823597308
+Weights w1 , w2
+0.41595650106097204 1.0779510636935936
+With the inputs, the activity value is 1.302921158173012 With the inputs, the activation value is 0.786326198680361
+Question 2 Input
+# -*- coding: utf-8 -*- """
+Spyder Editor
+This is a temporary script file. """
+import numpy as np np.set_printoptions(precision=4,suppress=True)
+x1 = 0.8 x2 = 0.9 w1 = 0.24 w2 = 0.88 eta = 5.0 bias = 0 d=0.95
+def activation(A):
+return 1.0/(1 + np.exp(-1*A))
+for i in range(0,75):
+A = w1*x1 + w2*x2 + bias y = activation(A)
+delta = (d - y)*y*(1-y)
+w1 = w1 + eta*delta*x1 w2 = w2 + eta*delta*x2 bias = bias + eta*delta*1
+
+print(y)
+print("Weights w1 , w2")
+print(w1, w2)
+activity = w1*x1 + w2*x2
+print("With the inputs, the activity value is ", activity)
+print("With the inputs, the activation value is ", activation(activity))
+*Run Output
+.7279011823597308
+Weights w1 , w2
+0.41595650106097204 1.0779510636935936
+With the inputs, the activity value is 1.302921158173012 With the inputs, the activation value is 0.786326198680361 0.8209602413294873
+Weights w1 , w2
+0.4918238908165611 1.1633018771686312
+With the inputs, the activity value is 1.4404308021050172 With the inputs, the activation value is 0.8085213547473699 0.8526088146349863
+Weights w1 , w2
+0.5407793324695114 1.2183767490282003
+With the inputs, the activity value is 1.5291625401009894 With the inputs, the activation value is 0.8218837507924185 0.870471795515964
+Weights w1 , w2
+0.5766467590602422 1.2587276039427724
+With the inputs, the activity value is 1.594172250796689 With the inputs, the activation value is 0.8312023000572971 0.8823610045092689
+Weights w1 , w2
+0.6047304868248718 1.2903217976779806
+With the inputs, the activity value is 1.64507400737008 With the inputs, the activation value is 0.8382241765371521 0.890999084228504
+Weights w1 , w2
+0.627651095590006 1.3161074825387564
+With the inputs, the activity value is 1.6866176107568855 With the inputs, the activation value is 0.8437788247085158 0.8976315827556391
+Weights w1 , w2
+
+0.6468994476162027 1.3377618785682277
+With the inputs, the activity value is 1.7215052488043672 With the inputs, the activation value is 0.8483226203090771 0.9029227158190951
+Weights w1 , w2
+0.6634053620600352 1.3563310323175393
+With the inputs, the activity value is 1.7514222187338135 With the inputs, the activation value is 0.8521320955389405 0.9072641843237704
+Weights w1 , w2
+0.6777878246101213 1.3725113026863862
+With the inputs, the activity value is 1.7774904321058447 With the inputs, the activation value is 0.8553867084215607 0.9109041736742518
+Weights w1 , w2
+0.6904795433788348 1.3867894863011887
+With the inputs, the activity value is 1.8004941723741377 With the inputs, the activation value is 0.8582090797305437 0.914008671700023
+Weights w1 , w2
+0.7017947591516943 1.3995191040456556
+With the inputs, the activity value is 1.8210030009624456 With the inputs, the activation value is 0.8606864356785865 0.9166934887704334
+Weights w1 , w2
+0.7119687707625479 1.410964867107866
+With the inputs, the activity value is 1.8394433970071178 With the inputs, the activation value is 0.8628828656710013 0.9190422261110651
+Weights w1 , w2
+0.7211822516409373 1.421330033096054
+With the inputs, the activity value is 1.8561428310991985 With the inputs, the activation value is 0.864846729811481 0.9211169508566813
+Weights w1 , w2
+0.7295768803929762 1.4307739904420977
+With the inputs, the activity value is 1.871358095712269 With the inputs, the activation value is 0.8666153422618252 0.9229648397589835
+Weights w1 , w2
+0.7372657604575913 1.4394239805147897
+With the inputs, the activity value is 1.8852941908293839 With the inputs, the activation value is 0.868218045515516 0.9246224768114605
+
+Weights w1 , w2
+0.7443405827266137 1.44738315556744
+With the inputs, the activity value is 1.898117306191987 With the inputs, the activation value is 0.8696782934333803 0.926118725569756
+Weights w1 , w2
+0.7508766804128987 1.4547362654645104
+With the inputs, the activity value is 1.9099639832483786 With the inputs, the activation value is 0.871015101505227 0.9274767033922389
+Weights w1 , w2
+0.7569366785991852 1.4615537634240827
+With the inputs, the activity value is 1.9209477299610227 With the inputs, the activation value is 0.872244080610783 0.9287151717682731
+Weights w1 , w2
+0.7625731822020221 1.467894829977274
+With the inputs, the activity value is 1.9311638927411643 With the inputs, the activation value is 0.8733781892404437 0.9298495364962199
+Weights w1 , w2
+0.7678307908417746 1.4738096396969955
+With the inputs, the activity value is 1.9406933084007159 With the inputs, the activation value is 0.8744282909067967 0.9308925808530224
+Weights w1 , w2
+0.7727476329833844 1.4793410871063066
+With the inputs, the activity value is 1.9496050847823834 With the inputs, the activation value is 0.8754035739435787 0.9318550121102206
+Weights w1 , w2
+0.7773565505245671 1.4845261193401371
+With the inputs, the activity value is 1.9579587478257772 With the inputs, the activation value is 0.8763118722867634 0.9327458750745028
+Weights w1 , w2
+0.7816860250923122 1.4893967782288504
+With the inputs, the activity value is 1.965805920479815 With the inputs, the activation value is 0.8771599138194895 0.933572869269555
+Weights w1 , w2
+0.7857609106917084 1.493981024528171
+With the inputs, the activity value is 1.9731916506287208 With the inputs, the activation value is 0.8779535149291224
+
+0.934342595212611
+Weights w1 , w2
+0.7896030192481591 1.498303396654178
+With the inputs, the activity value is 1.9801554723872878 With the inputs, the activation value is 0.878697734578799 0.9350607477832276
+Weights w1 , w2
+0.7932315930494713 1.5023855421806545
+With the inputs, the activity value is 1.9867322624021662 With the inputs, the activation value is 0.8793969975271252 0.9357322696086261
+Weights w1 , w2
+0.7966636892728975 1.506246650432009
+With the inputs, the activity value is 1.9929529368071262 With the inputs, the activation value is 0.8800551937698594 0.9363614738790155
+Weights w1 , w2
+0.7999144954810382 1.5099038074161673
+With the inputs, the activity value is 1.9988450230593813 With the inputs, the activation value is 0.8806757594639955 0.9369521435386683
+Weights w1 , w2
+0.8029975904077196 1.5133722892086836
+With the inputs, the activity value is 2.004433132613991 With the inputs, the activation value is 0.8812617432919587 0.9375076120392815
+Weights w1 , w2
+0.8059251610092 1.516665806135349
+With the inputs, the activity value is 2.009739354329174 With the inputs, the activation value is 0.8818158612757523 0.9380308295714458
+Weights w1 , w2
+0.8087081842740673 1.519796707308325
+With the inputs, the activity value is 2.0147835839967465 With the inputs, the activation value is 0.8823405423529491 0.9385244177610088
+Weights w1 , w2
+0.8113565804240471 1.5227761529770523
+With the inputs, the activity value is 2.019583802018585 With the inputs, the activation value is 0.8828379665068474 0.9389907151302141
+Weights w1 , w2
+0.8138793427283315 1.525614260569372
+With the inputs, the activity value is 2.0241563086951
+
+With the inputs, the activation value is 0.8833100968523271 0.9394318151102985
+Weights w1 , w2
+0.8162846480764077 1.5283202290859577
+With the inputs, the activity value is 2.028515924638488 With the inputs, the activation value is 0.8837587067822248 0.9398495980050562
+Weights w1 , w2
+0.8185799516233253 1.53090244557624
+With the inputs, the activity value is 2.0326761623172764 With the inputs, the activation value is 0.8841854030517377 0.9402457580100947
+Weights w1 , w2
+0.8207720681752232 1.533368576697125
+With the inputs, the activity value is 2.0366493735675912 With the inputs, the activation value is 0.8845916455027568 0.9406218261661818
+Weights w1 , w2
+0.8228672424767213 1.5357256477863104
+With the inputs, the activity value is 2.0404468769890567 With the inputs, the activation value is 0.8849787639933169 0.9409791899498805
+Weights w1 , w2
+0.8248712101623261 1.537980111432616
+With the inputs, the activity value is 2.044079068419215 With the inputs, the activation value is 0.8853479729901135 0.9413191100680461
+Weights w1 , w2
+0.82678925081663 1.5401379071687078
+With the inputs, the activity value is 2.047555517105141 With the inputs, the activation value is 0.8857003841973465 0.9416427349154591
+Weights w1 , w2
+0.82862623433432 1.542204513626109
+With the inputs, the activity value is 2.0508850497309545 With the inputs, the activation value is 0.8860370175278213 0.941951113070004
+Weights w1 , w2
+0.8303866615668789 1.544184994262738
+With the inputs, the activity value is 2.054075824089967 With the inputs, the activation value is 0.8863588106683774 0.9422452041323063
+Weights w1 , w2
+0.8320747000776981 1.5460840375874096
+
+With the inputs, the activity value is 2.0571353938908272 With the inputs, the activation value is 0.8866666274483886 0.9425258881626832
+Weights w1 , w2
+0.833694215692974 1.547905992654595
+With the inputs, the activity value is 2.060070765943515 With the inputs, the activation value is 0.8869612651850064 0.9427939739247567
+Weights w1 , w2
+0.8352488004259004 1.5496549004791373
+With the inputs, the activity value is 2.0628884507719443 With the inputs, the activation value is 0.8872434611503025 0.9430502061098602
+Weights w1 , w2
+0.8367417972614064 1.5513345219190815
+With the inputs, the activity value is 2.0655945075362987 With the inputs, the activation value is 0.8875138982821587 0.9432952716877138
+Weights w1 , w2
+0.8381763222141653 1.5529483624909353
+With the inputs, the activity value is 2.068194584013174 With the inputs, the activation value is 0.8877732102415901 0.9435298055054189
+Weights w1 , w2
+0.8395552840108119 1.5544996945121627
+With the inputs, the activity value is 2.070693952269596 With the inputs, the activation value is 0.8880219859033965 0.9437543952375795
+Weights w1 , w2
+0.840881401695845 1.555991576907825
+With the inputs, the activity value is 2.0730975405737184 With the inputs, the activation value is 0.8882607733539344 0.943969585774477
+Weights w1 , w2
+0.8421572204176676 1.5574268729698755
+With the inputs, the activity value is 2.075409962007022 With the inputs, the activation value is 0.8884900834589072 0.9441758831220759
+Weights w1 , w2
+0.8433851256151026 1.5588082663169898
+With the inputs, the activity value is 2.077635540177373 With the inputs, the activation value is 0.8887103930549645 0.9443737578766896
+Weights w1 , w2
+
+0.8445673557942946 1.5601382752685808
+With the inputs, the activity value is 2.0797783323771584 With the inputs, the activation value is 0.888922147811263 0.944563648327993
+Weights w1 , w2
+0.8457060140601834 1.5614192658177057
+With the inputs, the activity value is 2.081842150484082 With the inputs, the activation value is 0.8891257648007158 0.944745963236408
+Weights w1 , w2
+0.8468030785449069 1.5626534633630196
+With the inputs, the activity value is 2.083830579862643 With the inputs, the activation value is 0.8893216348152252 0.9449210843244409
+Weights w1 , w2
+0.8478604118569155 1.5638429633390294
+With the inputs, the activity value is 2.085746996490659 With the inputs, the activation value is 0.8895101244545917 0.9450893685161027
+Weights w1 , w2
+0.8488797696587163 1.5649897408660554
+With the inputs, the activity value is 2.087594582506423 With the inputs, the activation value is 0.889691578014877 0.9452511499539388
+Weights w1 , w2
+0.8498628084675784 1.5660956595260254
+With the inputs, the activity value is 2.089376340347486 With the inputs, the activation value is 0.8898663191986678 0.9454067418192725
+Weights w1 , w2
+0.8508110927618651 1.5671624793570977
+With the inputs, the activity value is 2.09109510563088 With the inputs, the activation value is 0.8900346526668206 0.9455564379779299
+Weights w1 , w2
+0.8517261014656012 1.5681918641488009
+With the inputs, the activity value is 2.092753558906402 With the inputs, the activation value is 0.8901968654488291 0.9457005144708589
+Weights w1 , w2
+0.8526092338752103 1.569185388109611
+With the inputs, the activity value is 2.094354236398818 With the inputs, the activation value is 0.8903532282268419 0.9458392308666062
+
+Weights w1 , w2
+0.8534618150848308 1.570144541970434
+With the inputs, the activity value is 2.0958995398412554 With the inputs, the activation value is 0.890503996506541 0.9459728314905174
+Weights w1 , w2
+0.8542851009601018 1.5710707385801141
+With the inputs, the activity value is 2.0973917454901843 With the inputs, the activation value is 0.8906494116865213 0.946101546543706
+Weights w1 , w2
+0.8550802827046241 1.5719653180427018
+With the inputs, the activity value is 2.098833012402131 With the inputs, the activation value is 0.8907897020364476 0.9462255931232775
+Weights w1 , w2
+0.8558484910583523 1.572829552440646
+With the inputs, the activity value is 2.100225390043263 With the inputs, the activation value is 0.8909250835930779 0.9463451761539311
+Weights w1 , w2
+0.8565908001628423 1.5736646501831972
+With the inputs, the activity value is 2.1015708252951515 With the inputs, the activation value is 0.8910557609822158 0.9464604892398906
+Weights w1 , w2
+0.8573082311244837 1.574471760015044
+With the inputs, the activity value is 2.1028711689131265 With the inputs, the activation value is 0.8911819281737481 0.9465717154450838
+Weights w1 , w2
+0.8580017553035153 1.5752519747164544
+With the inputs, the activity value is 2.104128181487621 With the inputs, the activation value is 0.8913037691761381 0.9466790280086007
+Weights w1 , w2
+0.858672297353691 1.576006334522902
+With the inputs, the activity value is 2.105343538953565 With the inputs, the activation value is 0.8914214586760549 0.9467825910016772
+Weights w1 , w2
+0.8593207380348804 1.5767358302892402
+With the inputs, the activity value is 2.1065188376882205 With the inputs, the activation value is 0.8915351626282089
+
+0.9468825599317648
+Weights w1 , w2
+0.8599479168186052 1.5774414064209306
+With the inputs, the activity value is 2.1076555992337216 With the inputs, the activation value is 0.8916450387999321 0.9469790822986502
+Weights w1 , w2
+0.8605546343044914 1.5781239635925526
+With the inputs, the activity value is 2.1087552746768905 With the inputs, the activation value is 0.8917512372745677 0.9470722981070541
+Weights w1 , w2
+0.861141654463832 1.5787843612718107
+With the inputs, the activity value is 2.109819248715695 With the inputs, the activation value is 0.8918539009173194 0.9471623403396802
+Weights w1 , w2
+0.8617097067248571 1.579423420065464
+With the inputs, the activity value is 2.110848843438803 With the inputs, the activation value is 0.8919531658068393 0.9472493353942674
+Weights w1 , w2
+0.8622594879129024 1.580041923902015
+With the inputs, the activity value is 2.111845321842136 With the inputs, the activation value is 0.8920491616355092 0.9473334034878392
+Weights w1 , w2
+0.8627916640573987 1.5806406220645732
+With the inputs, the activity value is 2.112809891104035 With the inputs, the activation value is 0.8921420120810764 0.9474146590310214
+Weights w1 , w2
+0.8633068720764865 1.581220231086047
+With the inputs, the activity value is 2.1137437056386315 With the inputs, the activation value is 0.89223183515204
+Question 3 Input
+# -*- coding: utf-8 -*- """
+
+Spyder Editor
+This is a temporary script file. """
+import numpy as np np.set_printoptions(precision=4,suppress=True)
+x1 = 0.8 x2 = 0.9 w1 = 0.24 w2 = 0.88 eta = 5.0 bias = 0 d=0.15
+def activation(A):
+return 1.0/(1 + np.exp(-1*A))
+for i in range(0,30):
+A = w1*x1 + w2*x2 + bias y = activation(A)
+delta = (d - y)*y*(1-y)
+w1 = w1 + eta*delta*x1 w2 = w2 + eta*delta*x2 bias = bias + eta*delta*1 print(y)
+print("Weights w1 , w2")
+print(w1, w2)
+activity = w1*x1 + w2*x2
+print("With the inputs, the activity value is ", activity)
+print("With the inputs, the activation value is ", activation(activity))
+*Run Output
+runfile('/Users/juliangendreau/.spyder-py3/temp.py', wdir='/Users/juliangendreau/.spyder- py3')
+0.7279011823597308
+Weights w1 , w2
+-0.21783886239194544 0.36493127980906137
+
+With the inputs, the activity value is 0.15416706191459886 With the inputs, the activation value is 0.5384656097469512 0.396963948266236
+Weights w1 , w2
+-0.4543153107993181 0.0988952753507672
+With the inputs, the activity value is -0.274446500823764 With the inputs, the activation value is 0.43181581292358856 0.2418908760328503
+Weights w1 , w2
+-0.5217189886125256 0.023066137810908646
+With the inputs, the activity value is -0.3966156668602027 With the inputs, the activation value is 0.40212573318197625 0.20607245026496784
+Weights w1 , w2
+-0.5584142793708198 -0.018216064292172207
+With the inputs, the activity value is -0.46312588135961086 With the inputs, the activation value is 0.386244540391192 0.1882924569311725
+Weights w1 , w2
+-0.5818245119317079 -0.044552575923171404
+With the inputs, the activity value is -0.5055569278762206 With the inputs, the activation value is 0.37623566153136 0.1775788950347703
+Weights w1 , w2
+-0.597935510134724 -0.06267744890156454
+With the inputs, the activity value is -0.5347581121191873 With the inputs, the activation value is 0.3694078193062349 0.17048731598173372
+Weights w1 , w2
+-0.6095248890365221 -0.07571550016608736
+With the inputs, the activity value is -0.5557638613786964 With the inputs, the activation value is 0.36452818588033437 0.16552646015520145
+Weights w1 , w2
+-0.6181034105026103 -0.08536633681543652
+With the inputs, the activity value is -0.5713124315359812 With the inputs, the activation value is 0.3609340433086964 0.16192942886588765
+Weights w1 , w2
+-0.6245791000199632 -0.09265148752245847
+With the inputs, the activity value is -0.5830496187861832 With the inputs, the activation value is 0.3582311787161129 0.15925610041305588
+Weights w1 , w2
+
+-0.6295364302559893 -0.09822848403798774
+With the inputs, the activity value is -0.5920347798389805 With the inputs, the activation value is 0.35616811764136114 0.15723385160617087
+Weights w1 , w2
+-0.6333707005309339 -0.10254203809730046
+With the inputs, the activity value is -0.5989843947123176 With the inputs, the activation value is 0.35457608261569795 0.15568409857063725
+Weights w1 , w2
+-0.636359321346699 -0.10590423651503617
+With the inputs, the activity value is -0.6044012699408918 With the inputs, the activation value is 0.35333739930609215 0.15448480188874156
+Weights w1 , w2
+-0.6387025271449868 -0.10854034303810987
+With the inputs, the activity value is -0.6086483304502883 With the inputs, the activation value is 0.3523675936390046 0.1535497916303054
+Weights w1 , w2
+-0.6405480248101845 -0.11061652791145729
+With the inputs, the activity value is -0.6119932949684592 With the inputs, the activation value is 0.3516046345860626 0.15281664720018318
+Weights w1 , w2
+-0.6420066393028402 -0.11225746921569492
+With the inputs, the activity value is -0.6146370337363976 With the inputs, the activation value is 0.35100215486809383 0.15223922833580592
+Weights w1 , w2
+-0.6431626404447637 -0.11355797050035885
+With the inputs, the activity value is -0.6167322858061339 With the inputs, the activation value is 0.35052500633103034 0.1517828768799791
+Weights w1 , w2
+-0.6440807852049005 -0.11459088335551279
+With the inputs, the activity value is -0.618396423183882 With the inputs, the activation value is 0.35014624773392955 0.15142122413373926
+Weights w1 , w2
+-0.6448112536888172 -0.11541266039991904
+With the inputs, the activity value is -0.6197203973109808 With the inputs, the activation value is 0.3498450453631664 0.1511340020753161
+
+Weights w1 , w2
+-0.6453931896040791 -0.11606733830458865
+With the inputs, the activity value is -0.6207751561573931 With the inputs, the activation value is 0.34960517479514885 0.15090550400886654
+Weights w1 , w2
+-0.6458572895038024 -0.11658945069177741
+With the inputs, the activity value is -0.6216163372256416 With the inputs, the activation value is 0.3494139300746064 0.15072347811421385
+Weights w1 , w2
+-0.646227727404947 -0.11700619333056511
+With the inputs, the activity value is -0.6222877559214662 With the inputs, the activation value is 0.3492613160373896 0.15057831728528062
+Weights w1 , w2
+-0.6465236049092361 -0.11733905552289034
+With the inputs, the activity value is -0.6228240338979902 With the inputs, the activation value is 0.3491394417873063 0.15046245654143298
+Weights w1 , w2
+-0.6467600561746996 -0.11760506319653667
+With the inputs, the activity value is -0.6232526018166427 With the inputs, the activation value is 0.3490420598431083 0.15036991887690662
+Weights w1 , w2
+-0.6469490977513745 -0.11781773497029605
+With the inputs, the activity value is -0.6235952396743661 With the inputs, the activation value is 0.3489642125401947 0.15029596918602242
+Weights w1 , w2
+-0.6471002872062664 -0.11798782310704943
+With the inputs, the activity value is -0.6238692705613577 With the inputs, the activation value is 0.34890195853571426 0.1502368481157256
+Weights w1 , w2
+-0.6472212367638244 -0.11812389135930211
+With the inputs, the activity value is -0.6240884916344315 With the inputs, the activation value is 0.34885215986977636 0.15018956582884352
+Weights w1 , w2
+-0.6473180159278559 -0.1182327679188376
+With the inputs, the activity value is -0.6242639038692386 With the inputs, the activation value is 0.3488123152775396
+
+0.15015174119289978
+Weights w1 , w2
+-0.6473954683933502 -0.11831990194251862
+With the inputs, the activity value is -0.6244042864629469 With the inputs, the activation value is 0.3487804291313802 0.15012147574773205
+Weights w1 , w2
+-0.6474574623353238 -0.11838964512723892
+With the inputs, the activity value is -0.624516650482774 With the inputs, the activation value is 0.3487549080284323 0.1500972545184448
+Weights w1 , w2
+-0.6475070886196869 -0.11844547469714746
+With the inputs, the activity value is -0.6246065981231823 With the inputs, the activation value is 0.34873447895554033
